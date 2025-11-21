@@ -1,4 +1,4 @@
-module github.com/nobuenhombre/go-crypto-gost
+module github.com/Asr0d/go-crypto-gost
 
 go 1.17
 
