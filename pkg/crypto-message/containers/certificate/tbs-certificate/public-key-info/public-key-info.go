@@ -1,8 +1,11 @@
 // Package publickeyinfo provides
 // en: structure of the public key representation in the asn.1, methods for this structure
-//     and the decoding function from DER
+//
+//	and the decoding function from DER
+//
 // ru: структуру представления публичного ключа в asn.1, методы для этой структуры
-//     и функцию декодирования из DER
+//
+//	и функцию декодирования из DER
 //
 // asn.1 - Abstract Syntax Notation One (ASN. 1) is a standard interface description language
 // for defining data structures that can be serialized and deserialized in a cross-platform way.
@@ -77,6 +80,36 @@ func (pki *Container) GetHashFunction() (hashOid.Function, error) {
 	}
 
 	return hashFunc, nil
+}
+
+// contains curve and digest OIDs from certificate
+type AlgorithmParams struct {
+	CurveOID  asn1.ObjectIdentifier
+	DigestOID asn1.ObjectIdentifier
+}
+
+// extracts curve and digest OIDs from certificate public key parameters
+func (pki *Container) GetAlgorithmParams() (*AlgorithmParams, error) {
+	var params algorithmParam
+
+	rest, err := asn1.Unmarshal(pki.Algorithm.Parameters.FullBytes, &params)
+	if err != nil {
+		return nil, ge.Pin(err)
+	}
+
+	if len(rest) != 0 {
+		return nil, ge.Pin(&containers.TrailingDataError{})
+	}
+
+	return &AlgorithmParams{
+		CurveOID:  params.Curve,
+		DigestOID: params.Digest,
+	}, nil
+}
+
+// returns the algorithm OID from certificate
+func (pki *Container) GetAlgorithmOID() asn1.ObjectIdentifier {
+	return pki.Algorithm.Algorithm
 }
 
 func (pki *Container) GetPublicKey() (*gost3410.PublicKey, error) {
