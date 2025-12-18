@@ -1,8 +1,11 @@
 // Package oids provides
 // en: a set of constants and functions for working with ASN.1 OBJECT IDENTIFIER
-//     in relation to the GOST encryption standard
+//
+//	in relation to the GOST encryption standard
+//
 // ru: набор констант и функции работы с ASN.1 OBJECT IDENTIFIER
-//     применительно стандарта шифрования GOST
+//
+//	применительно стандарта шифрования GOST
 package oids
 
 import (
@@ -29,6 +32,8 @@ const (
 	GostR34102001CryptoProCParamSet    ID = "GostR34102001CryptoProCParamSet"
 	GostR34102001CryptoProXchAParamSet ID = "GostR34102001CryptoProXchAParamSet"
 	GostR34102001CryptoProXchBParamSet ID = "GostR34102001CryptoProXchBParamSet"
+	Gost28147                          ID = "Gost28147"
+	Gost28147CryptoProAParamSet        ID = "Gost28147CryptoProAParamSet"
 	Tc26Gost34102012256ParamSetA       ID = "Tc26Gost34102012256ParamSetA"
 	Tc26Gost34102012256ParamSetB       ID = "Tc26Gost34102012256ParamSetB"
 	Tc26Gost34102012256ParamSetC       ID = "Tc26Gost34102012256ParamSetC"
@@ -90,6 +95,8 @@ func getList() map[ID]asn1.ObjectIdentifier {
 		GostR34102001CryptoProCParamSet:    {1, 2, 643, 2, 2, 35, 3},
 		GostR34102001CryptoProXchAParamSet: {1, 2, 643, 2, 2, 36, 0},
 		GostR34102001CryptoProXchBParamSet: {1, 2, 643, 2, 2, 36, 1},
+		Gost28147:                          {1, 2, 643, 2, 2, 21},
+		Gost28147CryptoProAParamSet:        {1, 2, 643, 2, 2, 31, 1},
 		Tc26Gost34102012256ParamSetA:       {1, 2, 643, 7, 1, 2, 1, 1, 1},
 		Tc26Gost34102012256ParamSetB:       {1, 2, 643, 7, 1, 2, 1, 1, 2},
 		Tc26Gost34102012256ParamSetC:       {1, 2, 643, 7, 1, 2, 1, 1, 3},
