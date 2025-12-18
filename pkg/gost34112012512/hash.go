@@ -20,7 +20,7 @@ package gost34112012512
 import (
 	"hash"
 
-	"github.com/nobuenhombre/go-crypto-gost/internal/pkg/gost34112012"
+	"github.com/apr0d/go-crypto-gost/internal/pkg/gost34112012"
 )
 
 const (

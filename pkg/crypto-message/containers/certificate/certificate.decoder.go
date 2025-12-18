@@ -4,7 +4,7 @@ import (
 	"encoding/asn1"
 	"encoding/pem"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers"
+	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers"
 
 	"github.com/nobuenhombre/suikat/pkg/fico"
 	"github.com/nobuenhombre/suikat/pkg/ge"

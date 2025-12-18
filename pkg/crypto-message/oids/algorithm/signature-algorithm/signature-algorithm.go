@@ -6,10 +6,10 @@
 package signaturealgorithm
 
 import (
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/algorithm"
-	publickeyalgorithm "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/algorithm/public-key-algorithm"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/hash"
+	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids"
+	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids/algorithm"
+	publickeyalgorithm "github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids/algorithm/public-key-algorithm"
+	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids/hash"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 

@@ -19,7 +19,7 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/gost3412128"
+	"github.com/apr0d/go-crypto-gost/pkg/gost3412128"
 )
 
 func BenchmarkMul128(b *testing.B) {

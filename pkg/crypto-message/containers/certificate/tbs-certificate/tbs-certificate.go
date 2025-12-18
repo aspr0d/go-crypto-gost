@@ -23,7 +23,7 @@ import (
 	"time"
 
 	// nolint[:lll]
-	publickeyinfo "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/certificate/tbs-certificate/public-key-info"
+	publickeyinfo "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/certificate/tbs-certificate/public-key-info"
 )
 
 type Validity struct {

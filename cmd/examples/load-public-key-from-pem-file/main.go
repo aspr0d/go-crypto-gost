@@ -5,7 +5,7 @@ import (
 	"github.com/nobuenhombre/suikat/pkg/colorog"
 	"github.com/nobuenhombre/suikat/pkg/dates"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/certificate"
+	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/certificate"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 

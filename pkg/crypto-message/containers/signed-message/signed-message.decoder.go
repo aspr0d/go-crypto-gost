@@ -3,13 +3,13 @@ package signedmessage
 import (
 	"encoding/pem"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers"
+	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers"
 
-	signeddata "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data"
+	signeddata "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data"
 	// nolint[:lll]
-	contentinfo "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/content-info"
-	unsigneddata "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message/unsigned-data"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
+	contentinfo "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/content-info"
+	unsigneddata "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message/unsigned-data"
+	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids"
 	"github.com/nobuenhombre/suikat/pkg/fico"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 	"github.com/nobuenhombre/suikat/pkg/inslice"

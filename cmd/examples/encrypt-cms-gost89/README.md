@@ -27,7 +27,7 @@ echo -n "2202205000012424" | \
 # Генерация на Go
 echo -n "2202205000012424" | \
   go run cmd/examples/encrypt-cms-gost89/main.go \
-    -cert in-test.paymgate_2025.crt | \
+    -cert test.crt | \
   base64 -d > /tmp/go_cms.der
 
 ### 2. Просмотр CMS structure

@@ -3,9 +3,9 @@ package curves
 import (
 	"encoding/asn1"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/gost3410"
+	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers"
+	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids"
+	"github.com/apr0d/go-crypto-gost/pkg/gost3410"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 
