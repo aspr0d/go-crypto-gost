@@ -23,7 +23,7 @@ import (
 // encrypts plaintext using CMS EnvelopedData with GOST algorithms
 // it uses GOST 28147-89 for content encryption and VKO (GOST R 34.10-2012) for key wrapping!
 func EncryptCMS(ctx context.Context, plaintext []byte, recipientCert *certificate.Container) ([]byte, error) {
-	slog.InfoContext(ctx, "starting CMS encryption",
+	slog.DebugContext(ctx, "starting CMS encryption",
 		slog.Int("plaintextLen", len(plaintext)),
 	)
 
@@ -65,18 +65,18 @@ func EncryptCMS(ctx context.Context, plaintext []byte, recipientCert *certificat
 			return nil, ge.New(fmt.Sprintf("invalid GOST_UKM_HEX length: got %d bytes, need %d (16 hex chars)", len(b), gost28147.BlockSize))
 		}
 		copy(ukmBytes, b)
-		slog.InfoContext(ctx, "using fixed UKM from env", slog.String("ukmBytesHex", hex.EncodeToString(ukmBytes)))
+		slog.DebugContext(ctx, "using fixed UKM from env", slog.String("ukmBytesHex", hex.EncodeToString(ukmBytes)))
 	} else {
 		if _, err := rand.Read(ukmBytes); err != nil {
 			return nil, ge.Pin(err)
 		}
-		slog.InfoContext(ctx, "generated random UKM", slog.String("ukmBytesHex", hex.EncodeToString(ukmBytes)))
+		slog.DebugContext(ctx, "generated random UKM", slog.String("ukmBytesHex", hex.EncodeToString(ukmBytes)))
 	}
 
 	// UKM must be interpreted as little-endian per VKO/GOST specs
 	// NewUKM reverses bytes and converts to big.Int, matching OpenSSL's BN_lebin2bn
 	ukm := gost3410.NewUKM(ukmBytes)
-	slog.InfoContext(ctx, "UKM generated",
+	slog.DebugContext(ctx, "UKM generated",
 		slog.String("ukmBytesHex", hex.EncodeToString(ukmBytes)),
 		slog.String("ukmBigInt", ukm.Text(16)),
 	)
@@ -105,7 +105,7 @@ func EncryptCMS(ctx context.Context, plaintext []byte, recipientCert *certificat
 	ciphertext := make([]byte, len(plaintext))
 	cfbEncrypter.XORKeyStream(ciphertext, plaintext)
 
-	slog.InfoContext(ctx, "CFB encryption",
+	slog.DebugContext(ctx, "CFB encryption",
 		slog.String("sessionKeyHex", hex.EncodeToString(sessionKey)),
 		slog.String("ivHex", hex.EncodeToString(iv)),
 		slog.String("plaintextHex", hex.EncodeToString(plaintext)),
@@ -160,7 +160,7 @@ func EncryptCMS(ctx context.Context, plaintext []byte, recipientCert *certificat
 		return nil, ge.Pin(err)
 	}
 
-	slog.InfoContext(ctx, "key wrapping",
+	slog.DebugContext(ctx, "key wrapping",
 		slog.Int("wrappedKeyLen", len(wrappedKey)),
 		slog.String("kekHex", hex.EncodeToString(kek[:gost28147.KeySize])),
 		slog.String("sessionKeyHex", hex.EncodeToString(sessionKey)),
@@ -196,7 +196,7 @@ func EncryptCMS(ctx context.Context, plaintext []byte, recipientCert *certificat
 		return nil, ge.Pin(err)
 	}
 
-	slog.InfoContext(ctx, "CMS encryption completed",
+	slog.DebugContext(ctx, "CMS encryption completed",
 		slog.Int("derLen", len(der)),
 	)
 
