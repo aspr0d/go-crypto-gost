@@ -20,17 +20,17 @@ import (
 )
 
 func (prv *PrivateKey) KEK(pub *PublicKey, ukm *big.Int) ([]byte, error) {
-	keyX, keyY, err := prv.C.Exp(prv.Key, pub.X, pub.Y)
+	// VKO per CryptoPro/OpenSSL:
+	// scalar = (priv * ukm) mod q
+	// shared = scalar * pub
+	scalar := big.NewInt(0).Mul(prv.Key, ukm)
+	scalar.Mod(scalar, prv.C.Q)
+
+	keyX, keyY, err := prv.C.Exp(scalar, pub.X, pub.Y)
 	if err != nil {
 		return nil, err
 	}
-	u := big.NewInt(0).Set(ukm).Mul(ukm, prv.C.Co)
-	if u.Cmp(bigInt1) != 0 {
-		keyX, keyY, err = prv.C.Exp(u, keyX, keyY)
-		if err != nil {
-			return nil, err
-		}
-	}
+
 	pk := PublicKey{prv.C, keyX, keyY}
 	return pk.Raw(), nil
 }
