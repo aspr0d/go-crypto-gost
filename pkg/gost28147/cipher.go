@@ -106,6 +106,35 @@ func (c *Cipher) xcrypt(seq Seq, n1, n2 nv) (nv, nv) {
 	return n1, n2
 }
 
+// MacBlock performs one step of MAC calculation (like mac_block in OpenSSL)
+// XORs buffer with block, then encrypts buffer using SeqMAC (16 rounds)
+// This is used in CryptoPro key transport for MAC calculation
+func (c *Cipher) MacBlock(buffer []byte, block []byte) {
+	// XOR with block
+	for i := 0; i < BlockSize; i++ {
+		buffer[i] ^= block[i]
+	}
+
+	// Convert buffer to internal representation (little-endian)
+	n1 := nv(buffer[0]) | nv(buffer[1])<<8 | nv(buffer[2])<<16 | nv(buffer[3])<<24
+	n2 := nv(buffer[4]) | nv(buffer[5])<<8 | nv(buffer[6])<<16 | nv(buffer[7])<<24
+
+	// Encrypt using SeqMAC (16 rounds)
+	n1, n2 = c.xcrypt(SeqMAC, n1, n2)
+
+	// Convert back to bytes: this must match nvs2block(n2, n1, buffer)
+	// which writes n1 to bytes 0-3 and n2 to bytes 4-7
+	// (nvs2block swaps: 1st param goes to bytes 4-7, 2nd param to bytes 0-3)
+	buffer[0] = byte(n1 & 0xff)
+	buffer[1] = byte((n1 >> 8) & 0xff)
+	buffer[2] = byte((n1 >> 16) & 0xff)
+	buffer[3] = byte((n1 >> 24) & 0xff)
+	buffer[4] = byte(n2 & 0xff)
+	buffer[5] = byte((n2 >> 8) & 0xff)
+	buffer[6] = byte((n2 >> 16) & 0xff)
+	buffer[7] = byte((n2 >> 24) & 0xff)
+}
+
 // Encrypt single block.
 // If provided slices are shorter than the block size, then it will panic.
 func (c *Cipher) Encrypt(dst, src []byte) {
