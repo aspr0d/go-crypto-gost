@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
-	publickeyalgorithm "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/algorithm/public-key-algorithm"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/hash"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids"
+	publickeyalgorithm "github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids/algorithm/public-key-algorithm"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids/hash"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 

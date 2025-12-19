@@ -17,14 +17,14 @@ import (
 	"crypto/x509/pkix"
 	"encoding/asn1"
 
-	publickeyalgorithm "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/algorithm/public-key-algorithm"
+	publickeyalgorithm "github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids/algorithm/public-key-algorithm"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/containers"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/curves"
-	hashOid "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/hash"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/gost3410"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids/curves"
+	hashOid "github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids/hash"
+	"github.com/aspr0d/go-crypto-gost/pkg/gost3410"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 	"golang.org/x/crypto/cryptobyte"
 	cryptobyteAsn1 "golang.org/x/crypto/cryptobyte/asn1"

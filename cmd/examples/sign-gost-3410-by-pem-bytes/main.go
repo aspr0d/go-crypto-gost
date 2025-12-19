@@ -2,9 +2,9 @@
 package main
 
 import (
-	signByPEMBytes "github.com/nobuenhombre/go-crypto-gost/internal/app/sign-by-pem-bytes"
-	commandLine "github.com/nobuenhombre/go-crypto-gost/internal/pkg/command-line"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/services/sign"
+	signByPEMBytes "github.com/aspr0d/go-crypto-gost/internal/app/sign-by-pem-bytes"
+	commandLine "github.com/aspr0d/go-crypto-gost/internal/pkg/command-line"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/services/sign"
 	"github.com/nobuenhombre/suikat/pkg/colorog"
 	"github.com/nobuenhombre/suikat/pkg/dates"
 	"github.com/nobuenhombre/suikat/pkg/fico"

@@ -1,13 +1,16 @@
 // Package publickeyalgorithm provides
 // en: a set of constants and functions for working with encryption algorithms for public keys
-//     in relation to the GOST encryption standard
+//
+//	in relation to the GOST encryption standard
+//
 // ru: набор констант и функции работы с алгоритмами шифрования для публичных ключей
-//     применительно стандарта шифрования GOST
+//
+//	применительно стандарта шифрования GOST
 package publickeyalgorithm
 
 import (
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/algorithm"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids/algorithm"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 

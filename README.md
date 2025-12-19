@@ -1,10 +1,10 @@
 # GO CRYPTO GOST
 
 [![Build Status](https://travis-ci.com/nobuenhombre/go-crypto-gost.svg?branch=master)](https://app.travis-ci.com/github/nobuenhombre/go-crypto-gost)
-[![Go Report Card](https://goreportcard.com/badge/github.com/nobuenhombre/go-crypto-gost)](https://goreportcard.com/report/github.com/nobuenhombre/go-crypto-gost)
+[![Go Report Card](https://goreportcard.com/badge/github.com/aspr0d/go-crypto-gost)](https://goreportcard.com/report/github.com/aspr0d/go-crypto-gost)
 [![codecov](https://codecov.io/gh/nobuenhombre/go-crypto-gost/branch/master/graph/badge.svg)](https://codecov.io/gh/nobuenhombre/go-crypto-gost)
-[![GitHub Release](https://img.shields.io/github/release/nobuenhombre/go-crypto-gost.svg)](https://github.com/nobuenhombre/go-crypto-gost/releases)
-[![Go Reference](https://pkg.go.dev/badge/github.com/nobuenhombre/go-crypto-gost.svg)](https://pkg.go.dev/github.com/nobuenhombre/go-crypto-gost)
+[![GitHub Release](https://img.shields.io/github/release/nobuenhombre/go-crypto-gost.svg)](https://github.com/aspr0d/go-crypto-gost/releases)
+[![Go Reference](https://pkg.go.dev/badge/github.com/aspr0d/go-crypto-gost.svg)](https://pkg.go.dev/github.com/aspr0d/go-crypto-gost)
 
 ## RUS
 **GO CRYPTO GOST** - Библиотека компонентов 

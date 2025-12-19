@@ -4,8 +4,8 @@
 package curves
 
 import (
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/gost3410"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids"
+	"github.com/aspr0d/go-crypto-gost/pkg/gost3410"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 
