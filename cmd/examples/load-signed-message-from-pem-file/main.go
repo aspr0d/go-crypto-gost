@@ -2,7 +2,7 @@
 package main
 
 import (
-	signedmessage "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message"
+	signedmessage "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message"
 	"github.com/nobuenhombre/suikat/pkg/colorog"
 	"github.com/nobuenhombre/suikat/pkg/dates"
 

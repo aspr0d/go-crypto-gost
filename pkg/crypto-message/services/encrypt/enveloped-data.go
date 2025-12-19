@@ -10,13 +10,13 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/certificate"
-	envelopedmessage "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/enveloped-message"
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids"
-	publickeyalgorithm "github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids/algorithm/public-key-algorithm"
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids/curves"
-	"github.com/apr0d/go-crypto-gost/pkg/gost28147"
-	"github.com/apr0d/go-crypto-gost/pkg/gost3410"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/certificate"
+	envelopedmessage "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/enveloped-message"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
+	publickeyalgorithm "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/algorithm/public-key-algorithm"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/curves"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/gost28147"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/gost3410"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 

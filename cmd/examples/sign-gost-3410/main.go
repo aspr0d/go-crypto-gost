@@ -7,11 +7,11 @@ import (
 	"github.com/nobuenhombre/suikat/pkg/colorog"
 	"github.com/nobuenhombre/suikat/pkg/dates"
 
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids"
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids/curves"
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids/hash"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/curves"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/hash"
 
-	signgost3410 "github.com/apr0d/go-crypto-gost/internal/app/sign-gost-3410"
+	signgost3410 "github.com/nobuenhombre/go-crypto-gost/internal/app/sign-gost-3410"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 

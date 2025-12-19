@@ -4,14 +4,14 @@ import (
 	"crypto/x509/pkix"
 	"encoding/asn1"
 
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers"
 
 	// nolint[:lll]
-	contentinfo "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/content-info"
+	contentinfo "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/content-info"
 	// nolint[:lll]
-	rawcertificates "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/raw-certificates"
+	rawcertificates "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/raw-certificates"
 	// nolint[:lll]
-	signerinfo "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/signer-info"
+	signerinfo "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/signer-info"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 

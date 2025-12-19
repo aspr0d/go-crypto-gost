@@ -21,7 +21,7 @@ import (
 	"encoding/binary"
 	"math/big"
 
-	"github.com/apr0d/go-crypto-gost/pkg/gost28147"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/gost28147"
 )
 
 const (

@@ -6,18 +6,18 @@ import (
 	"encoding/asn1"
 	"time"
 
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/certificate"
-	signeddata "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/certificate"
+	signeddata "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data"
 
 	// nolint[:lll]
-	contentinfo "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/content-info"
+	contentinfo "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/content-info"
 	// nolint[:lll]
-	rawcertificates "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/raw-certificates"
+	rawcertificates "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/raw-certificates"
 	// nolint[:lll]
-	signerinfo "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/signer-info"
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids"
-	hashOid "github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids/hash"
-	"github.com/apr0d/go-crypto-gost/pkg/gost3410"
+	signerinfo "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data/signer-info"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
+	hashOid "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/hash"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/gost3410"
 	"github.com/nobuenhombre/suikat/pkg/chunks"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )

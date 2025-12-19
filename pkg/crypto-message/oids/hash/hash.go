@@ -7,11 +7,11 @@ import (
 	"crypto"
 	"hash"
 
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids"
-	"github.com/apr0d/go-crypto-gost/pkg/gost28147"
-	"github.com/apr0d/go-crypto-gost/pkg/gost34112012256"
-	"github.com/apr0d/go-crypto-gost/pkg/gost34112012512"
-	"github.com/apr0d/go-crypto-gost/pkg/gost341194"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/gost28147"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/gost34112012256"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/gost34112012512"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/gost341194"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 
 	// nolint[:revive]

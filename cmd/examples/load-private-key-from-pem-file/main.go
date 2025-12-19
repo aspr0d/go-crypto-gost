@@ -2,7 +2,7 @@
 package main
 
 import (
-	privatekey "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/private-key"
+	privatekey "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/private-key"
 	"github.com/nobuenhombre/suikat/pkg/colorog"
 	"github.com/nobuenhombre/suikat/pkg/dates"
 

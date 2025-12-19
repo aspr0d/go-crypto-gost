@@ -3,14 +3,14 @@ package signgost3410
 import (
 	"crypto/rand"
 
-	privateKeyPkg "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/private-key"
+	privateKeyPkg "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/private-key"
 
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids/hash"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/hash"
 	"github.com/nobuenhombre/suikat/pkg/chunks"
 
 	"io"
 
-	"github.com/apr0d/go-crypto-gost/pkg/gost3410"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/gost3410"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 

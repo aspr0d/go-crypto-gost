@@ -9,8 +9,8 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/certificate"
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/services/encrypt"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/certificate"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/services/encrypt"
 	"github.com/nobuenhombre/suikat/pkg/fico"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )

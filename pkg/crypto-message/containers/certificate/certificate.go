@@ -15,11 +15,11 @@ import (
 	"encoding/asn1"
 	"time"
 
-	publickeyalgorithm "github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids/algorithm/public-key-algorithm"
-	signaturealgorithm "github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids/algorithm/signature-algorithm"
+	publickeyalgorithm "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/algorithm/public-key-algorithm"
+	signaturealgorithm "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/algorithm/signature-algorithm"
 
-	tbscertificate "github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers/certificate/tbs-certificate"
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids"
+	tbscertificate "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/certificate/tbs-certificate"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 

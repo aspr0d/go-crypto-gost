@@ -20,7 +20,7 @@ import (
 	"hash"
 	"testing"
 
-	"github.com/apr0d/go-crypto-gost/pkg/gost28147"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/gost28147"
 	"golang.org/x/crypto/pbkdf2"
 )
 

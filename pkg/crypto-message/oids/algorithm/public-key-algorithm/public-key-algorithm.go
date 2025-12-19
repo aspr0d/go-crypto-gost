@@ -6,8 +6,8 @@
 package publickeyalgorithm
 
 import (
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids"
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids/algorithm"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/algorithm"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 

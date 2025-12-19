@@ -3,7 +3,7 @@ package contentinfo
 import (
 	"encoding/asn1"
 
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/containers"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers"
 
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )

@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/apr0d/go-crypto-gost/pkg/crypto-message/oids"
+	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 
