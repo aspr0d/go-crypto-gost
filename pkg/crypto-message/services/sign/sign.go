@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"encoding/pem"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/certificate"
-	privatekey "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/private-key"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/containers"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/containers/certificate"
+	privatekey "github.com/aspr0d/go-crypto-gost/pkg/crypto-message/containers/private-key"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )
 

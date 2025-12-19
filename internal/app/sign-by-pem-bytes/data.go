@@ -1,7 +1,7 @@
 package signbypembytes
 
 import (
-	commandline "github.com/nobuenhombre/go-crypto-gost/internal/pkg/command-line"
+	commandline "github.com/aspr0d/go-crypto-gost/internal/pkg/command-line"
 	"github.com/nobuenhombre/suikat/pkg/fico"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )

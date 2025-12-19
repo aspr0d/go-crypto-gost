@@ -23,8 +23,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/gogost"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/gost34112012512"
+	"github.com/aspr0d/go-crypto-gost/pkg/gogost"
+	"github.com/aspr0d/go-crypto-gost/pkg/gost34112012512"
 )
 
 var (
