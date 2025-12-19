@@ -19,8 +19,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/gost28147"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/gost341194"
+	"github.com/aspr0d/go-crypto-gost/pkg/gost28147"
+	"github.com/aspr0d/go-crypto-gost/pkg/gost341194"
 )
 
 // RFC 4357 VKO GOST R 34.10-2001 key agreement function.

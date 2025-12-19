@@ -21,9 +21,9 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/certificate"
-	signeddata "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data"
-	unsigneddata "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers/signed-message/unsigned-data"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/containers/certificate"
+	signeddata "github.com/aspr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message/signed-data"
+	unsigneddata "github.com/aspr0d/go-crypto-gost/pkg/crypto-message/containers/signed-message/unsigned-data"
 
 	"github.com/nobuenhombre/suikat/pkg/ge"
 )

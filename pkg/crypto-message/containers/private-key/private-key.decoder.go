@@ -4,13 +4,13 @@ import (
 	"encoding/asn1"
 	"encoding/pem"
 
-	publickeyalgorithm "github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/algorithm/public-key-algorithm"
+	publickeyalgorithm "github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids/algorithm/public-key-algorithm"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/containers"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/containers"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/crypto-message/oids/curves"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/gost3410"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids"
+	"github.com/aspr0d/go-crypto-gost/pkg/crypto-message/oids/curves"
+	"github.com/aspr0d/go-crypto-gost/pkg/gost3410"
 	"github.com/nobuenhombre/suikat/pkg/fico"
 	"github.com/nobuenhombre/suikat/pkg/ge"
 	"github.com/nobuenhombre/suikat/pkg/inslice"

@@ -18,8 +18,8 @@ package gost3410
 import (
 	"math/big"
 
-	"github.com/nobuenhombre/go-crypto-gost/pkg/gost34112012256"
-	"github.com/nobuenhombre/go-crypto-gost/pkg/gost34112012512"
+	"github.com/aspr0d/go-crypto-gost/pkg/gost34112012256"
+	"github.com/aspr0d/go-crypto-gost/pkg/gost34112012512"
 )
 
 // RFC 7836 VKO GOST R 34.10-2012 256-bit key agreement function.
